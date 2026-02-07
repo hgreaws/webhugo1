@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiacan | Soluciones IT & Cloud</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Chiacan<span>.</span></div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#producto">Producto</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Innovación, Cloud y Tecnología</h1>
+      <p>En <strong>Chiacan</strong> desarrollamos soluciones tecnológicas integrales para tu negocio: sitios web modernos, infraestructura AWS y entornos VMware optimizados.</p>
+      <a href="#contacto" class="btn-primary">Contáctanos</a>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <h3>🌐 Desarrollo Web</h3>
+        <p>Diseños elegantes, rápidos y seguros con tecnología moderna y adaptativa.</p>
+      </div>
+      <div class="card">
+        <h3>☁️ Amazon Web Services</h3>
+        <p>Infraestructura escalable, segura y optimizada en la nube de AWS.</p>
+      </div>
+      <div class="card">
+        <h3>💻 Soporte</h3>
+        <p>Realizamos soporte especializado a tus equipos, asegurando su correcto funcionamiento y optimización en todo momento.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="producto" class="section product-section">
+  <h2>Administracion y asesoria </h2>
+  <div class="product-card">
+    <h3>📱 Chiacan Mobile Manager</h3>
+    <p>Gestiona tus equipos móviles y líneas empresariales con control total, reportes automáticos y visibilidad centralizada.</p>
+   
+  </div>
+</section>
+
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Necesitas asesoría o una cotización personalizada?</p>
+    <div class="contact-links">
+      <a href="mailto:contacto@chiacan.com" class="btn-outline">📧 Correo</a>
+      <a href="https://wa.me/5660406773" target="_blank" class="btn-outline">💬 WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Chiacan. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+<script>
+  // Bloquear clic derecho
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Bloquear selección de texto
+  document.addEventListener('selectstart', event => event.preventDefault());
+
+  // Bloquear teclas comunes (Ctrl+U, Ctrl+S, F12)
+  document.onkeydown = function(e) {
+    if (e.key === "F12" || 
+        (e.ctrlKey && e.key === "u") || 
+        (e.ctrlKey && e.key === "s") || 
+        (e.ctrlKey && e.shiftKey && e.key === "i")) {
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+
+
+</body>
+</html>
+
