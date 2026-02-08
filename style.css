@@ -126,102 +126,342 @@ h2 {
   box-shadow: 0 0 25px rgba(0, 188, 212, 0.3);
 }
 
-.highlight {
-  border: 2px solid var(--secondary);
-  background: rgba(29, 233, 182, 0.05);
+.service-detail {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
-/* CONTACTO */
-.contact-links {
-  margin-top: 2rem;
-}
-
-.btn-outline {
-  display: inline-block;
-  margin: 1rem;
-  padding: 0.8rem 1.8rem;
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.btn-outline:hover {
-  background: var(--gradient);
-  color: #000;
-}
-
-/* FOOTER */
-footer {
-  background-color: #111;
-  padding: 2rem;
+/* Catalogo */
+.catalogo {
+  padding: 4rem 2rem;
   text-align: center;
-  border-top: 1px solid #333;
-  color: #aaa;
+}
+
+.example-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #161616;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: var(--text);
+}
+
+/* ACCORDION */
+.accordion {
+  margin-top: 20px;
+}
+
+.accordion-item {
+  background-color: #444; /* Fondo más oscuro y neutro */
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion-item:hover {
+  background-color: #00bcd4; /* Verde suave solo en hover */
+}
+
+.accordion-content {
+  padding: 0 20px;
+  display: none;
+  overflow: hidden;
+  background-color: #333; /* Fondo oscuro para los contenidos */
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.accordion-item.active + .accordion-content {
+  display: block;
+}
+
+.accordion-content p {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Animaciones */
+.accordion-item.active {
+  background-color: #00bcd4; /* Verde suave cuando se activa */
+}
+
+.accordion-content {
+  background-color: #222; /* Fondo oscuro para el contenido del acordeón */
+  border-left: 3px solid #1de9b6; /* Delgada línea verde para resaltar el contenido */
+}
+
+.accordion-item, .accordion-content {
+  border-radius: 8px;
+}
+
+/* Mejora de la visibilidad y accesibilidad */
+h3 {
+  color: #1de9b6; /* Verde suave para los títulos */
+  font-size: 1.5rem;
+}
+
+/* Estilos Específicos para Cada Catálogo */
+
+/* Desarrollo Web */
+#desarrollo-web {
+  background-color: #1e1e1e;
+  border-left: 4px solid var(--secondary);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+#desarrollo-web ul li {
+  background-color: #333;
+}
+
+/* Amazon Web Services */
+#aws {
+  background-color: #0a0a0a;
+  border-left: 4px solid var(--primary);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+#aws ul li {
+  background-color: #333;
+}
+
+/* Soporte Técnico */
+#soporte {
+  background-color: #161616;
+  border-left: 4px solid #e91e63; /* Diferente color para destacar soporte */
+  padding: 40px;
+  border-radius: 12px;
+}
+
+#soporte ul li {
+  background-color: #333;
+}
+
+/* Normatividad */
+#normatividad {
+  background-color: #222;
+  border-left: 4px solid #1de9b6; /* Verde suave para normatividad */
+  padding: 40px;
+  border-radius: 12px;
+}
+
+#normatividad ul li {
+  background-color: #333;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
+    text-align: center;
   }
+  
   nav a {
     display: inline-block;
     margin: 0.5rem;
   }
+
   .hero h1 {
     font-size: 2rem;
   }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services .card {
+    padding: 1.5rem;
+  }
+
+  .btn-primary, .btn-more {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+  }
+
+  .product-card {
+    padding: 20px;
+  }
 }
 
-.card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-.product-section {
-  background: #050505;
-  padding: 60px 20px;
+/* FOOTER */
+footer {
   text-align: center;
-  border-top: 1px solid #00ffc8;
-  border-bottom: 1px solid #00ffc8;
+  padding: 1rem;
+  margin-top: 4rem;
+  color: #aaa;
+  background-color: #111;
 }
 
-.product-card {
-  background: #0a0f0f;
-  color: #fff;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+footer p {
+  font-size: 1rem;
+}
+
+
+/* Estilos globales */
+:root {
+  --primary: #00bcd4;
+  --secondary: #1de9b6;
+  --bg: #0a0a0a;
+  --text: #e0e0e0;
+  --card-bg: #161616;
+  --gradient: linear-gradient(135deg, #00bcd4, #1de9b6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.logo span {
+  color: var(--secondary);
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+/* SECCIONES */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Acordeón solo para Desarrollo Web */
+.accordion {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.product-card p {
-  max-width: 700px;
-  line-height: 1.6;
-  margin: 20px 0 40px 0;
+.accordion-item {
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.btn-demo {
-  background: #00ffc8;
-  color: #000;
-  padding: 14px 35px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
+.accordion-item:hover {
+  background-color: #00bcd4;
 }
 
-.btn-demo:hover {
-  background: #00bfa5;
-  transform: scale(1.05);
+.accordion-content {
+  padding: 0 20px;
+  display: none;
+  overflow: hidden;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.accordion-item.active + .accordion-content {
+  display: block;
+}
+
+.accordion-content p {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Animaciones */
+.accordion-item.active {
+  background-color: #00bcd4;
+}
+
+.accordion-content {
+  background-color: #222;
+  border-left: 3px solid #1de9b6;
+}
+
+.accordion-item, .accordion-content {
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+  color: #aaa;
+  background-color: #111;
+}
+
+footer p {
+  font-size: 1rem;
 }

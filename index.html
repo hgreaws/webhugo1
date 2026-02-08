@@ -29,38 +29,42 @@
   <section id="servicios">
     <h2>Servicios</h2>
     <div class="services">
-      <div class="card">
+      <div class="card" id="web-service">
         <h3>🌐 Desarrollo Web</h3>
         <p>Diseños elegantes, rápidos y seguros con tecnología moderna y adaptativa.</p>
+        <!-- Redirige a la página de información de Desarrollo Web -->
+        <a href="catalogo-web.html" class="btn-more">Más información sobre Desarrollo Web</a>
       </div>
-      <div class="card">
+      <div class="card" id="aws-service">
         <h3>☁️ Amazon Web Services</h3>
         <p>Infraestructura escalable, segura y optimizada en la nube de AWS.</p>
+        <!-- Redirige a la página de información sobre AWS -->
+        <a href="catalogo-aws.html" class="btn-more">Más información sobre AWS</a>
       </div>
-      <div class="card">
+      <div class="card" id="support-service">
         <h3>💻 Soporte</h3>
         <p>Realizamos soporte especializado a tus equipos, asegurando su correcto funcionamiento y optimización en todo momento.</p>
+        <!-- Redirige a la página de información sobre Soporte -->
+        <a href="catalogo-soporte.html" class="btn-more">Más información sobre Soporte</a>
+      </div>
+      <div class="card" id="normativity-service">
+        <h3>📜 Normatividad</h3>
+        <p>Políticas, Procedimientos y Manuales.</p>
+        <!-- Redirige a la página de información sobre Normatividad -->
+        <a href="catalogo-normatividad.html" class="btn-more">Más información sobre Normatividad</a>
       </div>
     </div>
-      <div class="card">
-        <h3>💻 Normatividad</h3>
-        <p>Politicas, Procedimientos y Manuales.</p>
-      </div>
-    </div>
-  
-  
-
   </section>
 
   <section id="producto" class="section product-section">
-  <h2>Administracion y asesoria </h2>
-  <div class="product-card">
-    <h3>📱 Chiacan Mobile Manager</h3>
-    <p>Gestiona tus equipos móviles y líneas empresariales con control total, reportes automáticos y visibilidad centralizada.</p>
-   
-  </div>
-</section>
-
+    <h2>Administración y asesoría</h2>
+    <div class="product-card">
+      <h3>📱 Chiacan Mobile Manager</h3>
+      <p>Gestiona tus equipos móviles y líneas empresariales con control total, reportes automáticos y visibilidad centralizada.</p>
+      <!-- Redirige a la página de gestión de móviles -->
+      <a href="catalogo-moviles.html" class="btn-more">Más información sobre Gestión de Móviles</a>
+    </div>
+  </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
@@ -76,28 +80,5 @@
   </footer>
 
   <script src="script.js"></script>
-
-
-<script>
-  // Bloquear clic derecho
-  document.addEventListener('contextmenu', event => event.preventDefault());
-
-  // Bloquear selección de texto
-  document.addEventListener('selectstart', event => event.preventDefault());
-
-  // Bloquear teclas comunes (Ctrl+U, Ctrl+S, F12)
-  document.onkeydown = function(e) {
-    if (e.key === "F12" || 
-        (e.ctrlKey && e.key === "u") || 
-        (e.ctrlKey && e.key === "s") || 
-        (e.ctrlKey && e.shiftKey && e.key === "i")) {
-      e.preventDefault();
-      return false;
-    }
-  };
-</script>
-
-
 </body>
 </html>
-
