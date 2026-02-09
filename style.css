@@ -335,3 +335,118 @@ nav a:hover {
     font-size: 1rem;
   }
 }
+
+
+/* Sección AWS */
+#aws {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#aws h2 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem; /* Ajuste para un tamaño de título más grande */
+}
+
+#aws p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+#aws h3 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* Acordeón para AWS */
+.accordion-item {
+  background-color: var(--primary);
+  color: white;
+  padding: 1.2rem;
+  border: none;
+  text-align: left;
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.accordion-item:hover {
+  background-color: var(--secondary);
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.accordion-item.active + .accordion-content {
+  display: block;
+}
+
+.accordion-item.active {
+  background-color: var(--secondary);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-top: 2rem;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  padding-left: 20px;
+  text-indent: -15px;
+}
+
+/* Estilos para los enlaces en el catálogo */
+#aws a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#aws a:hover {
+  color: var(--secondary);
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 768px) {
+  #aws {
+    padding: 2rem 1rem;
+  }
+
+  #aws h2 {
+    font-size: 2rem;
+  }
+
+  #aws p, #aws h3 {
+    font-size: 1.1rem;
+  }
+
+  .accordion-item {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .accordion-content {
+    font-size: 1rem;
+  }
+
+  ul {
+    font-size: 1rem;
+  }
+}
