@@ -112,9 +112,10 @@ h2 {
 /* CARDS */
 .services, .product {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Asegura que las tarjetas se ajusten en pantallas más grandes */
   gap: 2rem;
   margin-top: 2rem;
+  justify-items: center; /* Centra las tarjetas en el contenedor */
 }
 
 .card {
@@ -252,7 +253,7 @@ footer p {
   }
 
   .services {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Cambiado a 2 columnas */
   }
 
   .services .card {
@@ -358,5 +359,6 @@ ul li {
   }
 
   .accordion-item {
-    font-size: 
+    font-size: 1rem;
   }
+}
