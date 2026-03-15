@@ -1,0 +1,77 @@
+[33mcommit 0463ae05c7ee4b73dd9eff3efb3c1118edddb838[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Tue Mar 10 22:07:28 2026 -0500
+
+     se realizo cambio de html telefono
+
+[33mcommit f7b2c84933aa4a6ff5b59d56299e6b50cf36ed47[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Tue Mar 10 18:14:55 2026 -0500
+
+     se realizo cambio de html google analytuc
+
+[33mcommit d1fa432808d39c0925086073402ca993e008ca97[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Wed Feb 11 10:19:39 2026 -0500
+
+     se actulaizo solo style2
+
+[33mcommit 423d1f463b5cbad732271672107a7a1a64472919[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Wed Feb 11 09:57:01 2026 -0500
+
+     se actulaizo solo style
+
+[33mcommit 435a052758e57b54dbfe65af5ddf95b814506c78[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Mon Feb 9 16:27:06 2026 -0500
+
+    borre lo de proyectos
+
+[33mcommit 0c0e1ca7dadf9e36b1e104988ab93ae7567f5ac7[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Mon Feb 9 15:57:02 2026 -0500
+
+     actualizacion de css
+
+[33mcommit db7fd2f9831ac5f9ff1341062f1e01b868a59353[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Mon Feb 9 15:22:16 2026 -0500
+
+    Primer commit
+
+[33mcommit 7cb42c55c71f136486ec5bdc188fbad054ae9345[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Sun Feb 8 23:46:43 2026 -0500
+
+    Añadido mensaje de éxito al formulario de contacto
+
+[33mcommit 43714ff08316970fbfdd6b01139ea374e73c74b3[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Sun Feb 8 00:21:14 2026 -0500
+
+     actualizacion de paginas de acordeon y mejoras
+
+[33mcommit e5de93dd122d0db0e6cc83ada4bf66c9f0d7ba2f[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Sat Feb 7 21:41:29 2026 -0500
+
+    Agregar flujo de trabajo para desplegar en S3
+
+[33mcommit 08fcf0964c8d8c6815e1296a955c3bd1bfdf32e7[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Sat Feb 7 21:29:02 2026 -0500
+
+    Actualizar página index.html con nuevos cambios
+
+[33mcommit 11be93fa3f6033d68f261419b48fba2e93ce41cc[m
+Author: KIke <82732564+hgreaws@users.noreply.github.com>
+Date:   Sat Feb 7 21:18:54 2026 -0500
+
+    Create README.md
+
+[33mcommit eb01d8f2954a4c147e9839cc47284e7804d35440[m[33m ([m[1;32mnueva-rama[m[33m)[m
+Author: hugoreyes <hgreaws@gmail.com>
+Date:   Sat Feb 7 18:58:12 2026 -0500
+
+    Initial commit
